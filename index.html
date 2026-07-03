@@ -1186,7 +1186,7 @@
   <div class="screen-inner">
     <div class="step-label">Passo 1 de 4</div>
     <h1 class="screen-title">Onde fica <em>instalado</em> o assistente digital IA?</h1>
-    <p class="screen-sub">Cada plataforma tem vantagens diferentes. Escolhe a que já usas — ou pede-nos para escolher por ti.</p>
+    <p class="screen-sub">Cada plataforma tem vantagens diferentes. A melhor escolha é a que o profissional já usa — ou a escolha pode ficar connosco.</p>
 
     <div class="platform-grid">
       <button class="platform-card" style="border-color:var(--accent); position:relative;" onclick="selectPlatform('claude','Claude Projects')">
@@ -1205,19 +1205,19 @@
       <button class="platform-card" onclick="selectPlatform('gemini','Google Gemini Gems')">
         <div class="platform-badge b-gemini">◆</div>
         <div class="platform-name">Google Gemini Gems</div>
-        <div class="platform-desc">Se já usas Gmail, Drive e Documentos Google.</div>
+        <div class="platform-desc">Para quem já usa Gmail, Drive e Documentos Google.</div>
       </button>
 
       <button class="platform-card" onclick="selectPlatform('copilot','Microsoft Copilot Agents')">
         <div class="platform-badge b-copilot">M</div>
         <div class="platform-name">Microsoft Copilot</div>
-        <div class="platform-desc">Se já usas Teams, Outlook e SharePoint no M365.</div>
+        <div class="platform-desc">Para quem já usa Teams, Outlook e SharePoint no M365.</div>
       </button>
 
       <button class="platform-card" onclick="selectPlatform('perplexity','Perplexity Spaces')">
         <div class="platform-badge b-perplexity">P</div>
         <div class="platform-name">Perplexity Spaces</div>
-        <div class="platform-desc">Se precisas de citações e fontes verificáveis.</div>
+        <div class="platform-desc">Para quem precisa de citações e fontes verificáveis.</div>
       </button>
 
       <button class="platform-card" onclick="selectPlatform('mistral','Mistral Le Chat')">
@@ -1238,7 +1238,7 @@
           <div class="platform-badge b-other">?</div>
           <div>
             <div class="platform-name">Outro / não sei</div>
-            <div class="platform-desc">Recebe um bloco universal que funciona em qualquer LLM. Cola no campo de instructions da plataforma escolhida.</div>
+            <div class="platform-desc">É entregue um bloco universal que funciona em qualquer LLM, pronto a colar no campo de instructions da plataforma escolhida.</div>
           </div>
         </div>
       </button>
@@ -1263,7 +1263,7 @@
       <button class="template-card" onclick="selectTemplate('catalogo')">
         <div class="template-tag">Catálogo · 5 assistentes digitais IA prontos</div>
         <div class="template-title">Partir de um<br>assistente digital IA pronto</div>
-        <div class="template-desc">As 17 secções já pré-preenchidas com o assistente digital IA que escolheres. Só editas o que é específico de ti.</div>
+        <div class="template-desc">As 17 secções já pré-preenchidas com o assistente digital IA escolhido. Só é preciso editar o que é específico de cada profissional.</div>
         <ul class="template-list">
           <li>Dr. Escriba IA · MGF + Urgência</li>
           <li>Dr. Escriba IA · Internato</li>
@@ -1957,10 +1957,10 @@ Gerado em 2026 · Proteína Lúdica LDA · proteinaludica.com</div>
     let rec = '';
     // lógica simples de recomendação
     if (q[1] === 'claude') rec = 'Claude Projects. Com Pro já disponível, é o mais forte em raciocínio detalhado e textos longos.';
-    else if (q[1] === 'm365') rec = 'Microsoft Copilot Agents. Integra-se com o Outlook e SharePoint que já usas.';
+    else if (q[1] === 'm365') rec = 'Microsoft Copilot Agents. Integra-se com o Outlook e SharePoint já em uso.';
     else if (q[1] === 'gws') rec = 'Google Gemini Gems. Liga directo ao Gmail e Drive sem setup.';
     else if (q[1] === 'gpt') rec = 'ChatGPT Custom GPTs. Aproveita a licença Plus já existente.';
-    else if (q[2] === 'yes') rec = 'Gemini (se usas Google) ou Copilot (se usas M365). Ambos lêem emails e ficheiros sem ficheiro-a-ficheiro.';
+    else if (q[2] === 'yes') rec = 'Gemini (para quem usa Google) ou Copilot (para quem usa M365). Ambos lêem emails e ficheiros sem ficheiro-a-ficheiro.';
     else if (q[3] === 'solo') rec = 'Claude Projects. Sem licenças de equipa, melhor para uso individual e privado.';
     else if (q[3] === 'large') rec = 'Microsoft Copilot ou Google Gemini. Ambos têm gestão central e licenças por utilizador.';
     else rec = 'Claude Projects. Melhor ponto de partida neutro — sem integrações obrigatórias, privado por defeito.';
