@@ -320,6 +320,17 @@
   }
   .template-card.featured .template-list li::before { background: var(--amber-dark); }
 
+  .template-note {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted2);
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 0.5px solid var(--border);
+  }
+
   .template-skip {
     background: var(--bg2);
     border-radius: 8px;
@@ -337,6 +348,13 @@
     border-bottom: 0.5px solid var(--accent);
     padding-bottom: 2px;
     cursor: pointer;
+  }
+  .template-disclaimer {
+    margin-top: 1.25rem;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--muted);
+    text-align: center;
   }
 
   /* ─── ECRÃ 3: PREENCHER ─── */
@@ -1262,16 +1280,14 @@
 
     <div class="template-grid">
       <button class="template-card" onclick="selectTemplate('catalogo')">
-        <div class="template-tag">Catálogo · 5 assistentes digitais IA prontos</div>
+        <div class="template-tag">Catálogo · 2 assistentes digitais IA prontos</div>
         <div class="template-title">Partir de um<br>assistente digital IA pronto</div>
         <div class="template-desc">As 17 secções já pré-preenchidas com o assistente digital IA escolhido. Só é preciso editar o que é específico de cada profissional.</div>
         <ul class="template-list">
           <li>Dr. Escriba IA · MGF + Urgência</li>
           <li>Dr. Escriba IA · Internato</li>
-          <li>RehabAssist · Reabilitação</li>
-          <li>Assistente de Saúde · 12 semanas</li>
-          <li>Assistente Clínico · gestão</li>
         </ul>
+        <div class="template-note">Documentação · não decisão clínica</div>
       </button>
 
       <button class="template-card featured" onclick="selectTemplate('branco')">
@@ -1295,6 +1311,10 @@
       </div>
       <span class="template-skip-link" onclick="goTo(4); updatePaymentState();">Ir direto ao upgrade →</span>
     </div>
+
+    <p class="template-disclaimer">
+      Os assistentes digitais IA do catálogo são ferramentas de documentação e organização. Não substituem o juízo clínico do profissional — o profissional revê e decide sempre.
+    </p>
   </div>
 </section>
 
